@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aitana ocaña</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap">
+    <link rel="shortcut icon" href="img/Logo.webp" type="image/x-icon">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;                 
+        }
+        .contacto{
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            background-image: url(img/foto-contacto-definitiva.webp);
+        }
+        
+        form{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            backdrop-filter: blur(15px);
+            margin-left: 20%;
+            margin-top: 5%;
+            text-align: center;    
+        }
+        h2{
+            color: white;
+            margin: 15px
+        }
+        span{
+            color: #09f;
+        }
+        .notificacion{
+            color: #ffffff;
+            display: inline-flex;
+        }
+        .input{
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .input > input{
+            width: 50%;
+            height: 30px;
+            padding: 10px;
+            outline: none;
+            border: 3px solid #ff1493;
+            border-radius: 20px;
+        }
+        .chek{
+            margin-top: -10px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        .input > textarea{
+            padding: 10px;
+            outline: none;
+            border: 2px solid #ff1493;
+            border-radius: 10px;
+        }
+        .btn-formulario{
+            height: 40px;
+            width: 25%;
+            border-radius: 20px;
+            color: #ffffff;
+            background-color: #09f;
+            border: none;
+            margin-bottom: 20px;
+        }
+        .btn-formulario:hover{
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+  
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="Index.html"><img src="img/Logo.webp" alt="Logo_Alpha" width="55" height="55"></a>
+        <h1>Aitana Ocaña</h1>
+        <div class="buscar">
+            <input type="text" placeholder="Buscar" required>
+            <div class="btn">
+                <img class="lupa" src="img/lupaa.svg" alt="Boton Buscar">
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="Canciones.html">Sus Canciones</a></li>
+            <li><a href="Albunes.html">Albunes</a></li>
+            <li><a href="Sobre-su-carrera.html">Sobre su Carrera</a></li>
+            <li><a href="Contacto.html">Contactanos</a></li>
+        </ul>
+        <button onclick="window.location.href='Iniciar-sesion.html'">Iniciar Sesión</button>
+    </nav>
+
+    <main class="contacto">
+        <section class="formulario">
+                <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                    <fieldset>
+                        <div>
+                            <h2>Haz una pregunta a <span>Aitana</span> o sugiere una colaboración con algun artista</h2>
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="Ingresa tu Nombre" required>
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="Ingresa tus Apellidos" required>
+                        </div>
+                        <div class="input">
+                            <input type="email" placeholder="Ingresa tu Email" required>
+                        </div>
+                        <div class="chek">
+                            <input type="checkbox" checked> <p class="notificacion">Deseo recibir notificaciones por correo.</p>
+                        </div>
+                        <div class="input">
+                            <textarea cols="35" rows="10" placeholder="Ingresa tus sugerencias y preguntas aqui...."></textarea>
+                        </div>
+                        <button class="btn-formulario">Enviar mensaje</button>
+                    </fieldset>
+                </form>   
+        </section>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <h3>Copyright</h3>
+            <p>© 2023 Aitana Music</p>
+        </div>
+        <div class="enlaces-legales">
+            <h3>Enlaces a páginas legales</h3>
+            <ul>
+                <li><a href="https://privacy.umusic.com/es/" target="_blank">Política de privacidad</a></li>
+                <li><a href="https://privacy.umusic.com/es/#EnlacesAPaginasWeb" target="_blank">Términos de servicio</a>
+                </li>
+            </ul>
+        </div>
+        <div class="redes-sociales">
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UCtakZatUqY-XaihWfMnz07w" target="_blank"><img
+                            src="img/youtube.png" alt="Enlace a Youtube" width="35" height="35"></a>
+                </li>
+                <li><a href="https://www.instagram.com/aitanax/" target="_blank"><img
+                            src="img/instagram.png" alt="Enlace a Instagram" width="35"
+                            height="35"></a></li>
+                <li><a href="https://www.tiktok.com/@holaitana?lang=en" target="_blank"><img
+                            src="img/tik-tok.png" alt="Enlace a TikTok" width="35" height="35"></a>
+                </li>
+                <li><a href="https://twitter.com/Aitanax" target="_blank"><img src="img/twitter.png"
+                            alt="Enlace a Twitter" width="35" height="35"></a></li>
+                <li><a href="https://www.facebook.com/aitanax" target="_blank"><img
+                            src="img/facebook.png" alt="Enlace a facebook" width="35"
+                            height="35"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
