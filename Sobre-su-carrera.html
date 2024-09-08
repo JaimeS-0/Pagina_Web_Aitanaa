@@ -4,127 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aitana ocaña</title>
-    <meta name="description" content="Pagina hecha con fines Educativos para aprender">
+    <title>Aitana Ocaña</title>
+    <meta name="description" content="Página hecha con fines educativos para aprender">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap">
     <link rel="shortcut icon" href="img/Logo.webp" type="image/x-icon">
     
     <style>
-        
-        .biografia{
+        body {
+            font-family: 'Arimo', sans-serif;
+        }
+
+        .biografia, .carrera {
             max-width: 60%;
             font-size: 28px;
-            margin-top: 80px;
-            margin-left: 50px;
+            margin: 80px 50px 0 50px;
             font-family: 'Candara', sans-serif;
+            line-height: 1.6;
         }
-        .titulobio{
+
+        .titulobio {
             margin-bottom: 15px;
         }
-        .lineas{
+
+        .lineas {
             margin-bottom: 15px;
             background-color: #ff1493;
             height: 3px;
-        }
-        .img1{
-            
-            float: right;
-            margin-right: 200px; 
-            margin-top: 280px;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-        .img2 {
-            float: right;
-            margin-right: 10%;
-            margin-top: 15%; 
-            position: absolute;
-            top: 880px;
-            right: 0;
-        }
-        .carrera{
-            max-width: 60%;
-            font-size: 28px;
-            margin-top: 100px;
-            margin-left: 50px;
-            font-family: 'Candara', sans-serif;
+            border: none;
         }
 
+        .img1, .img2 {
+            max-width: 45%;
+            height: auto;
+            margin-bottom: 20px;
+        }
 
-
-        @media (max-width: 2300px) {
         .img1 {
-            margin-right: 113px;
-        }   
+            float: right;
+            margin: 20px 0 20px 20px;
         }
+
+        .img2 {
+            float: right;
+            margin: 20px 0 20px 20px;
+        }
+
         @media (max-width: 1000px) {
-        .img1 {
-            margin-right: 83px;
-        }   
-        }
-        @media (max-width: 1710px) {
-            .img1{
-                font-size: 15px;
-                width: 500px;
-                height: 500px;
+            .biografia, .carrera {
+                max-width: 90%;
+                margin: 20px;
+                font-size: 22px;
             }
-            .img2{
-                font-size: 12px;
-                margin-right: 43px;
-                margin-top: 950px;
-                width: 400px;
-                height: 400px;
+
+            .img1, .img2 {
+                max-width: 100%;
+                float: none;
+                margin: 20px auto;
+                display: block;
             }
         }
-        @media (max-width: 1610px) {
-            .img1{
-                margin-right: 55px;
-                width: 400px;
-                height: 450px;
-            }
-            .img2{
-                font-size: 8px;
-                margin-right: 43px;
-                margin-top: 999px;
-                width: 400px;
-                height: 400px;
-            }
-        }
-        @media (max-width: 1800px) {
-            .img2{
-                font-size: 12px;
-                margin-right: 55px;
-                margin-top: 350px;
-                width: 400px;
-                height: 500px;
-            }
-        }
-        @media (max-width: 1500px) {
-        .img2 {
-            margin-right: -43px;
-        }   
-        }
-        @media (max-width: 2300px) {
-        .img2 {
-            margin-right: 113px; 
-        }   
-        }
-        @media (max-width: 1000px) {
-        .img2 {
-            margin-right: 83px;
-        }   
-        }
-        .aitanablanco{
+
+        .aitanablanco {
             margin-left: 5%;
             margin-bottom: 60px;
         }
-        .Aitana{
+
+        .Aitana {
             color: #09f;
         }
-        
 
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+            background-color: #f8f8f8;
+        }
+
+        header img {
+            margin-right: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .buscar {
+            display: flex;
+            align-items: center;
+        }
+
+        .buscar input {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        nav {
+            background-color: #09f;
+            padding: 15px 50px;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav button {
+            background-color: #fff;
+            color: #09f;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
     </style>
 </head>
 
@@ -151,79 +163,57 @@
     </nav>
 
     <main>
-        <section class="carrera">
-            <h2 class="titulobio">Biorafía</h2>
+        <section class="biografia">
+            <h2 class="titulobio">Biografía</h2>
             <hr class="lineas">
             <p>
-                <span class="Aitana">Aitana Ocaña Morales</span> nació el 27 de junio de 1999 en <a href="https://www.google.com/search?q=barcelona+españa&client=opera-gx&hs=QLV&sca_esv=595707050&sxsrf=AM9HkKkNgiJjztxRGfERI-pD2E1OZCv0Ww%3A1704387180384&ei=bOKWZbT2FvGskdUP89Ce-Ac&ved=0ahUKEwi03MiDmcSDAxVxVqQEHXOoB38Q4dUDCBA&uact=5&oq=barcelona+españa&gs_lp=Egxnd3Mtd2l6LXNlcnAiEWJhcmNlbG9uYSBlc3Bhw7FhMgUQLhiABDILEC4YgwEYsQMYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQLhiABDIUEC4YgAQYlwUY3AQY3gQY4ATYAQFI0A5QAFjRDXAAeAGQAQGYAcIBoAHABqoBAzMuNLgBA8gBAPgBAcICChAjGIAEGIoFGCfCAg0QABiABBiKBRhDGLEDwgIOEAAYgAQYigUYsQMYgwHCAgsQLhiABBixAxiDAcICEBAAGIAEGIoFGEMYsQMYgwHCAgoQABiABBiKBRhDwgILEAAYgAQYsQMYgwHCAggQLhiABBixA8ICBBAAGAPCAhAQLhgUGIMBGIcCGLEDGIAE4gMEGAAgQYgGAboGBggBEAEYFA&sclient=gws-wiz-serp" target="_blank">Barcelona</a> y vivió en <a href="https://www.google.com/search?client=opera-gx&hs=r1p&sca_esv=595707050&sxsrf=AM9HkKnLQmVJ5Jz8AWIL-vvd-WsBiS8BtQ:1704387250870&q=sant+climent+de+llobregat+españa&spell=1&sa=X&ved=2ahUKEwj3hZelmcSDAxXGRaQEHQTqDzMQBSgAegQICRAC&biw=982&bih=992&dpr=1.25" target="_blank">San Clemente de Llobregat</a> 
-                como la única hija de Cosme Ocaña y Belén Morales. Desde pequeña empezó a sentir interés por la música,
-                por lo que comenzó a tocar el piano a temprana edad. A sus doce años, en su época como estudiante de secundaria,
-                interpretó el tema <a href="https://www.youtube.com/watch?v=HQpUKxu8m14" target="_blank">«We Are the World»</a> del cantante Michael Jackson en el centro donde cursaba sus estudios 
+                <span class="Aitana">Aitana Ocaña Morales</span> nació el 27 de junio de 1999 en 
+                <a href="https://www.google.com/search?q=barcelona+españa" target="_blank">Barcelona</a> y vivió en 
+                <a href="https://www.google.com/search?q=sant+climent+de+llobregat+españa" target="_blank">San Clemente de Llobregat</a> 
+                como la única hija de Cosme Ocaña y Belén Morales. Desde pequeña empezó a sentir interés por la música, 
+                por lo que comenzó a tocar el piano a temprana edad. A sus doce años, en su época como estudiante de secundaria, 
+                interpretó el tema <a href="https://www.youtube.com/watch?v=HQpUKxu8m14" target="_blank">«We Are the World»</a> 
+                del cantante Michael Jackson en el centro donde cursaba sus estudios 
                 y comenzó a sentir pasión por la música y el canto.
-            </p> <br>
+            </p>
+            <img src="img/aitana-bio.jpg" alt="Aitana Ocaña" class="img1">
             <p>
-                En 2014, comenzó a realizar versiones de canciones populares en YouTube. Ese mismo año, comenzó a componer sus primeras canciones
-                y algunas de ellas fueron grabadas en estudio, como <a href="https://www.youtube.com/watch?v=Nl99EcqpCYA" target="_blank">«Laws about me»</a>, publicada en YouTube el 12 de agosto de 2015.
-                Una de sus mayores pasiones es la música de género cinematográfico, siendo una de sus mayores inspiraciones <a href="https://www.google.com/search?client=opera-gx&q=Thomas+J.+Bergersen&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">Thomas J. Bergersen.</a>
-            </p> <br>
-            <p>    
-                En 2017, culminó el bachillerato en artes visuales y tenía planeado estudiar diseño,
+                En 2014, comenzó a realizar versiones de canciones populares en YouTube. Ese mismo año, comenzó a componer sus primeras canciones 
+                y algunas de ellas fueron grabadas en estudio, como <a href="https://www.youtube.com/watch?v=Nl99EcqpCYA" target="_blank">«Laws about me»</a>, publicada en YouTube el 12 de agosto de 2015. 
+                Una de sus mayores pasiones es la música de género cinematográfico, siendo una de sus mayores inspiraciones 
+                <a href="https://www.google.com/search?q=Thomas+J.+Bergersen" target="_blank">Thomas J. Bergersen.</a>
+            </p>
+            <p>
+                En 2017, culminó el bachillerato en artes visuales y tenía planeado estudiar diseño, 
                 pero le surgió otra oportunidad cuando en julio de 2017, después de realizar el examen de selectividad para acceder a la 
-                universidad, visitó la ciudad universitaria en <a href="https://www.google.com/search?client=opera-gx&q=madrid&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">Madrid</a>, donde se llevaron a cabo las audiciones para formar parte 
-                de la novena temporada del concurso de música <a href="https://www.google.com/search?q=novena+temporada+operacion+triunfo&client=opera-gx&hs=Qs&sca_esv=595707050&sxsrf=AM9HkKnaIJEcdpmu-Kqg3bcuyxjpdYaxjQ%3A1704387943357&ei=Z-WWZdK0FeaukdUPyI2NgAs&oq=novena+temporada+oper&gs_lp=Egxnd3Mtd2l6LXNlcnAiFW5vdmVuYSB0ZW1wb3JhZGEgb3BlcioCCAAyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGJ8FSOUuUABY7SRwAHgBkAEAmAH5AaABhhKqAQYxNC41LjK4AQPIAQD4AQHCAgoQIxiABBiKBRgnwgIEECMYJ8ICERAuGIAEGLEDGIMBGMcBGNEDwgIOEC4YgAQYigUYsQMYgwHCAgsQLhiABBixAxiDAcICChAuGIAEGIoFGEPCAg4QABiABBiKBRixAxiDAcICCxAAGIAEGLEDGIMBwgIKEC4YQxiABBiKBcICEBAAGIAEGIoFGEMYsQMYgwHCAgoQABiABBiKBRhDwgIOEC4YgAQYxwEYrwEYjgXCAgUQABiABMICGhAuGIAEGLEDGMcBGK8BGJgFGJ4FGJkFGI4FwgIIEAAYgAQYsQPCAggQLhiABBixA8ICBRAuGIAEwgIIEC4YgAQY1ALCAgYQABgWGB7CAgQQIRgV4gMEGAAgQYgGAQ&sclient=gws-wiz-serp" target="_blank">Operación Triunfo</a>, donde fue seleccionada y obtuvo el segundo puesto.
+                universidad, visitó la ciudad universitaria en <a href="https://www.google.com/search?q=madrid" target="_blank">Madrid</a>, donde se llevaron a cabo las audiciones para formar parte 
+                de la novena temporada del concurso de música <a href="https://www.google.com/search?q=novena+temporada+operacion+triunfo" target="_blank">Operación Triunfo</a>, donde fue seleccionada y obtuvo el segundo puesto.
             </p>
         </section>
         
         <section class="carrera">
             <h2 class="titulobio">Sobre Su Carrera</h2>
             <hr class="lineas">
-            <p>Desde su salida del programa, <span class="Aitana">Aitana</span> comenzó a trabajar en su primer trabajo discográfico. Después del lanzamiento del vídeo lírico de <a href="https://www.youtube.com/watch?v=0WGJIp0Jzio" target="_blank">«Arde»</a> en YouTube,
-                viajó a Los Ángeles para grabar su disco con el productor musical <a href="https://www.google.com/search?client=opera-gx&q=Sebastián+Krys&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">Sebastián Krys.</a> En mayo, actuó en Madrid, Málaga y Barcelona en los conciertos de <a href="https://www.google.com/search?client=opera-gx&q=LOS40+Primavera+Pop&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">LOS40 Primavera Pop.</a>
-            </p> <br>
-
-            <p>Posteriormente, fue invitada por <a href="https://www.google.com/search?gs_ssp=eJzj4tLP1TcwzM0wL0kyYPTiSUksy0xRSMosTkrMAQBnwwg_&client=opera-gx&q=david+bisbal&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">David Bisbal</a> para participar como invitada en su concierto en el Palau Sant Jordi de Barcelona, donde interpretó junto a él <a href="https://www.youtube.com/watch?v=AS5DOyyoXJI" target="_blank">«Mi princesa»</a>. 
-                El 29 de junio, <span class="Aitana">Aitana</span> y el resto de concursantes de Operación Triunfo 2017 realizaron un concierto benéfico en el <a href="https://www.google.com/search?q=estadio+santiago+bernabéu&client=opera-gx&hs=jfq&sca_esv=595718443&sxsrf=AM9HkKmWrYinrUoBeL8FSQZoHJRr83osgg%3A1704389722212&ei=WuyWZeKwDIyskdUPidq5SA&oq=estadio+&gs_lp=Egxnd3Mtd2l6LXNlcnAiCGVzdGFkaW8gKgIIADIKECMYgAQYigUYJzIZEC4YFBiDARivARjHARiHAhixAxiABBiOBTIREC4YrwEYxwEYsQMYgAQYjgUyDhAuGIAEGMcBGK8BGI4FMhEQLhiDARivARjHARixAxiABDIIEAAYgAQYsQMyDhAuGIAEGMcBGK8BGI4FMg4QLhiABBjHARivARiOBTIOEC4YgAQYxwEYrwEYjgUyERAuGIAEGLEDGMcBGK8BGI4FMigQLhgUGIMBGK8BGMcBGIcCGLEDGIAEGI4FGJcFGNwEGN4EGOAE2AEDSPw5UM4HWLEvcAV4AZABAZgBlAGgAYwLqgEEMi4xMLgBAcgBAPgBAagCE8ICBxAjGOoCGCfCAhMQABiABBiKBRhDGOoCGLQC2AEBwgIWEC4YgAQYigUYQxjIAxjqAhi0AtgBAsICFhAuGEMYgAQYigUYyAMY6gIYtALYAQLCAhgQLhiABBiKBRhDGMgDGOoCGLQCGArYAQLCAgQQIxgnwgIKEC4YgAQYigUYQ8ICCxAAGIAEGLEDGIMBwgIREC4YgAQYsQMYgwEYxwEY0QPCAgoQABiABBiKBRhDwgIQEAAYgAQYigUYQxixAxiDAcICFhAuGEMYgwEYxwEYsQMY0QMYgAQYigXCAgoQABiABBgUGIcCwgINEAAYgAQYigUYQxixA8ICBRAAGIAEwgIWEC4YgAQYigUYQxixAxiDARjHARjRA8ICChAuGEMYgAQYigXCAhQQLhiABBixAxiDARjHARivARiOBcICJRAuGIAEGIoFGEMYsQMYgwEYxwEY0QMYlwUY3AQY3gQY4ATYAQPCAg0QLhhDGLEDGIAEGIoFwgITEC4YgAQYigUYQxjHARivARiOBcICEBAuGIAEGIoFGEMYsQMYgwHCAg0QLhiABBiKBRhDGLEDwgINEC4YgAQYigUYQxjUAsICGRAuGEMYgwEYrwEYxwEYsQMYgAQYigUYjgXCAhYQLhhDGK8BGMcBGLEDGIAEGIoFGI4FwgIoEC4YQxiDARivARjHARixAxiABBiKBRiOBRiXBRjcBBjeBBjgBNgBA8ICGRAuGIAEGBQYhwIYsQMYgwEYxwEYrwEYjgXCAggQLhiABBixA8ICCBAAGIAEGMkDwgIOEAAYgAQYigUYsQMYgwHCAigQLhiABBgUGIcCGLEDGIMBGMcBGK8BGI4FGJcFGNwEGN4EGOAE2AED4gMEGAAgQYgGAboGBggBEAEYAboGBggCEAEYCLoGBggDEAEYFA&sclient=gws-wiz-serp" target="_blank">Estadio Santiago Bernabéu de Madrid</a>, al que asistieron más de 60 000 espectadores. 
-            </p> <br>
-                
-            <P>El 27 de julio, lanzó su primer sencillo oficial en solitario titulado <a href="https://www.youtube.com/watch?v=bHTfTPIMnaw" target="_blank">«Teléfono»</a> el cual debutó como número uno del Top 50 canciones 
-                de <a href="https://www.google.com/search?client=opera-gx&q=Promusicae&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">Promusicae</a>. El videoclip del sencillo fue el más visualizado en la plataforma de video <a href="https://www.hq.vevo.com/" target="_blank">Vevo</a> en un período de 24 horas en España.
-            </p> <br>
-
-            <p>Su segundo álbum, <a href="https://www.google.com/search?q=aitana+11+razones&client=opera-gx&hs=zuV&sca_esv=595707050&sxsrf=AM9HkKnm-IueLTNWDNFnPuC0HmojR4f7Xw%3A1704389385232&ei=CeuWZeXiDYX4kdUP2Kyk-AM&gs_ssp=eJzj4tVP1zc0zC2rKEuxyKowYPQSTMwsScxLVDA0VChKrMrPSy0GAL0hCyw&oq=aitana+11+r&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2FpdGFuYSAxMSByKgIIATIFEAAYgAQyCBAuGNQCGIAEMgoQABiABBgUGIcCMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQLhiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjuIlC-BFiyGHABeAGQAQCYAecBoAHECqoBBTcuMi4yuAEByAEA-AEBqAITwgIHECMY6gIYJ8ICExAAGIAEGIoFGEMY6gIYtALYAQHCAhYQLhiABBiKBRhDGMgDGOoCGLQC2AECwgIcEC4YgAQYigUYQxjHARjRAxjIAxjqAhi0AtgBAsICBBAjGCfCAhYQLhiABBiKBRhDGLEDGIMBGMcBGNEDwgILEAAYgAQYsQMYgwHCAg4QLhiABBiKBRixAxiDAcICChAuGIAEGIoFGEPCAgoQIxiABBiKBRgnwgINEC4YgAQYigUYQxixA8ICChAAGIAEGIoFGEPCAhQQLhiABBiKBRixAxiDARjHARjRA8ICDRAuGEMYsQMYgAQYigXCAg4QABiABBiKBRixAxiDAcICFxAuGNQCGIAEGJcFGNwEGN4EGOAE2AED4gMEGAAgQYgGAboGBggBEAEYAboGBggCEAEYCLoGBggDEAEYFA&sclient=gws-wiz-serp" target="_blank">11 Razones</a>, fue lanzado a nivel mundial a través de <a href="https://universalmusic.es/" target="_blank">Universal Music</a> España el 11 de diciembre de 2020. El disco, con once temas,
-                tres de ellos publicados como sencillos, entre ellos el sencillo homónimo «11 razones», contenía cinco colaboraciones, con: <a href="https://www.google.com/search?client=opera-gx&hs=DBW&sca_esv=595707050&sxsrf=AM9HkKmC3oKf5pqprt8LDa4077ojkVAOqQ:1704390391295&q=cali+el+dandee&spell=1&sa=X&ved=2ahUKEwi-k9P-pMSDAxXTUaQEHZFxCZoQBSgAegQICRAC&biw=982&bih=992&dpr=1.25" target="_blank">Cali y El Dandee</a>, 
-                <a href="https://www.google.com/search?q=sebastian+yatra&client=opera-gx&hs=wVB&sca_esv=595707050&biw=982&bih=992&sxsrf=AM9HkKn-5d5UuBB0V3NxIpHaxl7wgxEN0A%3A1704390393040&ei=-e6WZbKNAs-ikdUP2puEcA&gs_ssp=eJzj4tFP1zcsNMstzC0qzjFg9OIvTk1KLC7JTMxTqEwsKUoEAKUyCtU&oq=sebas&gs_lp=Egxnd3Mtd2l6LXNlcnAiBXNlYmFzKgIIATIKECMYgAQYigUYJzINEC4YQxixAxiABBiKBTIKEC4YgAQYigUYQzIKEC4YgAQYigUYQzINEAAYgAQYFBiHAhixAzINEC4YgAQYigUYQxjUAjIQEC4YgAQYigUYQxjHARivATIUEC4YgAQYsQMYgwEYxwEYrwEYjgUyCBAuGIAEGLEDMg4QLhiABBixAxiDARjUAkiZEFAAWLIFcAB4AZABAJgBfKABmwSqAQMyLjO4AQPIAQD4AQHCAgQQIxgnwgIKEC4YgAQYigUYJ8ICCxAAGIAEGLEDGIMBwgIFEC4YgATCAgoQLhhDGIAEGIoFwgIREC4YgAQYsQMYgwEYxwEY0QPiAwQYACBBiAYB&sclient=gws-wiz-serp" target="_blank">Sebastián Yatra</a>, <a href="https://www.google.com/search?client=opera-gx&q=beret&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">Beret</a>, <a href="https://www.google.com/search?q=Natalia+Lacunza&client=opera-gx&hs=frq&sca_esv=595707050&sxsrf=AM9HkKnU6ad5gFslcAgXuO8Cn4jZLRlY7w%3A1704390462999&ei=Pu-WZcDIPPG7kdUPt96EsAs&ved=0ahUKEwjA3-ugpcSDAxXxXaQEHTcvAbYQ4dUDCBA&uact=5&oq=Natalia+Lacunza&gs_lp=Egxnd3Mtd2l6LXNlcnAiD05hdGFsaWEgTGFjdW56YTIIEC4YsQMYgAQyChAAGIAEGBQYhwIyBRAuGIAEMgUQLhiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIXEC4YsQMYgAQYlwUY3AQY3gQY3wTYAQFIwwVQAFgAcAB4AZABAJgBYqABYqoBATG4AQPIAQD4AQL4AQHiAwQYACBBiAYBugYGCAEQARgU&sclient=gws-wiz-serp" target="_blank">Natalia Lacunza</a> y Pole y Álvaro Díaz.
-            </p> <br>
-            
-            <p>Dos meses más tarde de su lanzamiento, el álbum recibió catorce galardones discográficos internacionales. En el mismo mes,
-                obtuvo la premiación al Mejor artista del año y Canción del año por <a href="https://www.youtube.com/watch?v=qjWmbq9AcK4" target="_blank">«Si tú la quieres»</a> junto con David Bisbal en LOS40 Music Awards 2020.
-                 En febrero de 2021, recibió cinco nominaciones en diferentes categorías en la segunda edición de los <a href="https://www.google.com/search?client=opera-gx&q=Premios+Odeón&sourceid=opera&ie=UTF-8&oe=UTF-8"></a>Premios Odeón, 
-                 en la que obtuvo el galardón a Mejor canción pop por <a href="https://www.youtube.com/watch?v=pPoAE5DnQRg" target="_blank">«+»</a>, junto con Cali & El Dandee</p> <br>
-
-            <p>En marzo de 2022 anunció su gira <a href="https://www.google.com/search?q=11+razones+%2B+tour&client=opera-gx&hs=RfB&sca_esv=595707050&sxsrf=AM9HkKmTwNYrNt2eAFV6sWzr-vAlOUKfUg%3A1704390982474&ei=RvGWZcjGHPavkdUPrJu0wAc&oq=11+Razones+%2B+&gs_lp=Egxnd3Mtd2l6LXNlcnAiDTExIFJhem9uZXMgKyAqAggAMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjSEVCNAVj_CHABeAGQAQCYAVygAZICqgEBM7gBA8gBAPgBAcICBxAjGLADGCfCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA8ICDhAAGOQCGNYEGLAD2AEBwgITEC4YgAQYigUYQxjIAxiwA9gBAsICChAjGIAEGIoFGCfCAgoQABiABBiKBRhDwgIKEAAYgAQYFBiHAsICBRAuGIAE4gMEGAAgQYgGAZAGE7oGBggBEAEYCboGBggCEAEYCA&sclient=gws-wiz-serp" target="_blank">11 Razones + Tour</a>, complementario al 11 Razones Tour, con seis nuevos conciertos en <a href="https://www.google.com/search?client=opera-gx&q=españa&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">España</a>, 
-                en las ciudades de <a href="https://www.google.com/search?client=opera-gx&q=Valencia%2C&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">Valencia</a>, <a href="https://www.google.com/search?q=barcelona+españa&client=opera-gx&hs=81q&sca_esv=595707050&sxsrf=AM9HkKlkF5NND_CFseySoT5j2GmlmPcgFg%3A1704391111661&ei=x_GWZcXyJ-emkdUPld2q0Ao&oq=bar&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2JhcioCCAAyChAjGIAEGIoFGCcyChAjGIAEGIoFGCcyChAjGIAEGIoFGCcyEBAuGEMYgwEYsQMYgAQYigUyChAuGIAEGIoFGEMyChAuGIAEGIoFGEMyDRAAGIAEGIoFGEMYsQMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyERAuGIAEGIoFGLEDGIMBGNQCSOQLUABY7gRwAHgBkAEAmAGNAaABxQKqAQMxLjK4AQHIAQD4AQHCAhAQLhiABBiKBRhDGLEDGIMBwgIQEAAYgAQYigUYQxixAxiDAcICEBAuGIAEGIoFGEMYxwEY0QPCAhYQLhiABBiKBRhDGLEDGIMBGMcBGNED4gMEGAAgQYgGAQ&sclient=gws-wiz-serp" target="_blank">Barcelona</a>, <a href="https://www.google.com/search?q=sevilla+españa&client=opera-gx&hs=oNW&sca_esv=595707050&sxsrf=AM9HkKl1lkT5kGu0jHJUd7r6V6YPwOkV_Q%3A1704391172109&ei=BPKWZdWoBoyskdUPidq5SA&gs_ssp=eJzj4tDP1TewTDNONmD04i9OLcvMyUlUSC0uSDy8MREAcC4JWw&oq=Sevilla+es&gs_lp=Egxnd3Mtd2l6LXNlcnAiClNldmlsbGEgZXMqAggAMg0QLhiABBgUGIcCGLEDMgUQABiABDIFEAAYgAQyChAAGIAEGBQYhwIyBRAAGIAEMgUQABiABDIIEC4YgAQYsQMyBRAAGIAEMgUQABiABDILEC4YgAQYxwEYrwEyHBAuGIAEGBQYhwIYsQMYlwUY3AQY3gQY4ATYAQNIwBhQ0wFYgw1wAXgBkAEAmAFkoAGYAqoBAzIuMbgBAcgBAPgBAcICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADwgIOEAAY5AIY1gQYsAPYAQHCAhMQLhiABBiKBRhDGMgDGLAD2AECwgIQEC4YgAQYigUYQxixAxiDAcICDRAAGIAEGIoFGEMYsQPCAg4QABiABBiKBRixAxiDAcICChAAGIAEGIoFGEPCAggQABiABBixA8ICBBAAGAPCAgsQLhiABBixAxiDAcICHxAuGIAEGIoFGEMYsQMYgwEYlwUY3AQY3gQY4ATYAQPCAgsQABiABBixAxiDAeIDBBgAIEGIBgGQBhK6BgYIARABGAm6BgYIAhABGAi6BgYIAxABGBQ&sclient=gws-wiz-serp" target="_blank">Sevilla</a>, <a href="https://www.google.com/search?q=Fuengirola+españa&client=opera-gx&hs=j3q&sca_esv=595707050&sxsrf=ACQVn09DQCrBA55dwX6gCa8G_aaK9Q6I3w%3A1704391210989&ei=KvKWZZD2O-u7hbIPzvSH4A4&ved=0ahUKEwiQs8GFqMSDAxXrXUEAHU76AewQ4dUDCBA&uact=5&oq=Fuengirola+españa&gs_lp=Egxnd3Mtd2l6LXNlcnAiEkZ1ZW5naXJvbGEgZXNwYcOxYTIFEC4YgAQyBRAAGIAEMgIQJjICECYyAhAmMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgUQABiABDIEEAAYHjIUEC4YgAQYlwUY3AQY3gQY4ATYAQNIgw9QwANYuw1wAngBkAEAmAFpoAHLAaoBAzEuMbgBA8gBAPgBAvgBAcICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADwgIOEAAY5AIY1gQYsAPYAQHCAhMQLhiABBiKBRhDGMgDGLAD2AECwgIHEC4YDRiABMICBxAAGIAEGA3CAggQABgHGB4YD8ICCBAAGAgYHhgNwgIWEC4YDRiABBiXBRjcBBjeBBjgBNgBA-IDBBgAIEGIBgGQBhO6BgYIARABGAm6BgYIAhABGAi6BgYIAxABGBQ&sclient=gws-wiz-serp" target="_blank">Fuengirola</a>, <a href="https://www.google.com/search?q=bilbao+españa&client=opera-gx&hs=mjB&sca_esv=595707050&sxsrf=AM9HkKmVb4xFJHQJ4TbktnEuvXDSixJMpg%3A1704391251757&ei=U_KWZZHoLZqjkdUP68SNsAM&gs_ssp=eJzj4tDP1TfIKCksMWD04kvKzElKzFdILS5IPLwxEQBw0wlf&oq=Bilbaoespaña&gs_lp=Egxnd3Mtd2l6LXNlcnAiDUJpbGJhb2VzcGHDsWEqAggAMgYQLhgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yFRAuGAcYHhiXBRjcBBjeBBjgBNgBA0ipcVDsAljsAnACeAGQAQCYAV6gAV6qAQExuAEByAEA-AEC-AEBwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICExAuGIAEGIoFGEMYyAMYsAPYAQLCAhMQLhhDGIAEGIoFGMgDGLAD2AEC4gMEGAAgQYgGAZAGE7oGBggBEAEYCboGBggCEAEYCLoGBggDEAEYFA&sclient=gws-wiz-serp" target="_blank">Bilbao</a> y <a href="https://www.google.com/search?q=madrisd+españa&client=opera-gx&hs=TkB&sca_esv=595707050&sxsrf=AM9HkKkIzw5dnfiVjGYrComvkJmqb6O6_w%3A1704391294849&ei=fvKWZYS5M6GikdUPo862sAk&ved=0ahUKEwiE8L-tqMSDAxUhUaQEHSOnDZYQ4dUDCBA&uact=5&oq=madrisd+españa&gs_lp=Egxnd3Mtd2l6LXNlcnAiD21hZHJpc2QgZXNwYcOxYTIKEC4YDRixAxiABDIHEAAYgAQYDTIHEAAYgAQYDTIHEAAYgAQYDTIHEAAYgAQYDTIHEAAYgAQYDTIHEAAYgAQYDTIHEAAYgAQYDTIHEAAYgAQYDTIHEAAYgAQYDTIZEC4YDRixAxiABBiXBRjcBBjeBBjgBNgBA0idI1CDBliQInADeAGQAQGYAWygAeoGqgEDNC41uAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICExAuGIAEGIoFGEMYyAMYsAPYAQLCAgcQIxixAhgnwgIGEAAYBxgewgIHECMYsAIYJ8ICDRAuGIAEGA0YsQMYsQPCAhkQLhiABBgNGLEDGJcFGNwEGN4EGOAE2AEDwgINEAAYgAQYigUYQxixA8ICCBAAGAcYHhgKwgIKEAAYgAQYigUYQ8ICBhAuGAcYHsICFRAuGAcYHhiXBRjcBBjeBBjgBNgBA-IDBBgAIEGIBgGQBhK6BgYIARABGAm6BgYIAhABGAi6BgYIAxABGBQ&sclient=gws-wiz-serp" target="_blank">Madrid</a>. Este último, en el recinto <a href="https://www.google.com/search?client=opera-gx&q=WiZink+Center&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">WiZink Center</a>, obtuvo sold out en tan
-                solo dos horas, por lo que sacaron nueva fecha tres días más tarde, con la que también realizó el completo en pocos días, consiguiendo 23 846 entradas
-                vendidas.</p> <br>
-            <p>En noviembre, junto con el anuncio de la fecha de estreno de la serie <a href="https://www.google.com/search?client=opera-gx&q=La+última&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">La última</a>, protagonizada por ella misma, se publicó en todas las plataformas digitales
-                El álbum fue lanzado el 2 de diciembre, coincidiendo con el estreno de la serie en <a href="https://www.google.com/search?q=Disney%2B&client=opera-gx&hs=U7q&sca_esv=595707050&sxsrf=AM9HkKkm1RruZJDMGtpWwJ9D3Os5XXDynw%3A1704391443376&ei=E_OWZYXTFpikkdUPq_K7sAU&ved=0ahUKEwjFqKn0qMSDAxUYUqQEHSv5DlYQ4dUDCBA&uact=5&oq=Disney%2B&gs_lp=Egxnd3Mtd2l6LXNlcnAiB0Rpc25leSsyBBAjGCcyChAAGIAEGIoFGEMyCxAAGIAEGLEDGIMBMgoQABiABBiKBRhDMgoQABiABBiKBRhDMhAQABiABBgUGIcCGLEDGIMBMgoQABiABBgUGIcCMgsQABiABBixAxiDATILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBSO4JUNQEWNQEcAF4AZABAJgBXKABXKoBATG4AQPIAQD4AQHCAgoQABhHGNYEGLAD4gMEGAAgQYgGAZAGCA&sclient=gws-wiz-serp" target="_blank">Disney+</a> y <a href="https://www.google.com/search?q=star+%2B&client=opera-gx&hs=xmB&sca_esv=595707050&sxsrf=AM9HkKk7BgCl8D2BjmJ_rf63TqaKcPecGw%3A1704391448511&ei=GPOWZc3ZHpWpkdUP2ImC0A0&ved=0ahUKEwjNxeL2qMSDAxWVVKQEHdiEANoQ4dUDCBA&uact=5&oq=star+%2B&gs_lp=Egxnd3Mtd2l6LXNlcnAiBnN0YXIgKzIKEAAYgAQYFBiHAjIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi9DlAAWPQLcAB4AZABAJgBZqABtASqAQM0LjK4AQPIAQD4AQHCAgoQLhiABBiKBRgnwgIEECMYJ8ICChAjGIAEGIoFGCfCAgoQABiABBiKBRhDwgIKEC4YgAQYigUYQ8ICEBAAGIAEGIoFGEMYsQMYgwHCAhcQLhiABBiKBRiXBRjcBBjeBBjgBNgBAcICEBAuGIAEGIoFGEMYsQMYgwHCAgoQLhhDGIAEGIoFwgIQEC4YgAQYigUYQxjHARjRA8ICDRAAGIAEGIoFGEMYsQPiAwQYACBBiAYBugYGCAEQARgU&sclient=gws-wiz-serp" target="_blank">Star+</a>, por el sello discográfico <a href="https://www.google.com/search?client=opera-gx&q=Hollywood+Records&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">Hollywood Records</a> bajo el nombre La última (Banda Sonora Original).
-                 Está compuesto por ocho canciones, en versión de estudio y en versión acústica, haciendo dieciséis canciones en total, todas ellas interpretadas en solitario
-            </p> <br>
-            
-            <p>En marzo de 2023 comunicó a través de un video teaser el nombre de su tercer álbum de estudio <a href="https://www.google.com/search?q=Alpha+aitana&client=opera-gx&hs=89q&sca_esv=595707050&sxsrf=AM9HkKmL_RfI4kzOwkTkkPBivNT6SYwhcQ%3A1704391607370&ei=t_OWZeOjFpGskdUP7ZOQyAk&ved=0ahUKEwij28LCqcSDAxURVqQEHe0JBJkQ4dUDCBA&uact=5&oq=Alpha+aitana&gs_lp=Egxnd3Mtd2l6LXNlcnAiDEFscGhhIGFpdGFuYTIEECMYJzIEECMYJzIIEC4YsQMYgAQyChAAGIAEGBQYhwIyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI_RdQeFjRFnABeAGQAQCYAVegAeIDqgEBN7gBA8gBAPgBAcICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADwgIOEAAY5AIY1gQYsAPYAQHCAhkQLhiABBiKBRhDGMcBGNEDGMgDGLAD2AECwgITEC4YgAQYigUYQxjIAxiwA9gBAsICChAAGIAEGIoFGEPCAgoQLhiABBiKBRhDwgINEAAYgAQYigUYQxixA8ICEBAuGIAEGIoFGEMYxwEY0QPCAhAQLhiABBiKBRhDGLEDGIMBwgIOEC4YgAQYxwEYrwEYjgXCAggQABiABBixA8ICCBAuGIAEGNQCwgIXEC4YsQMYgAQYlwUY3AQY3gQY4ATYAQPiAwQYACBBiAYBkAYTugYGCAEQARgJugYGCAIQARgIugYGCAMQARgU&sclient=gws-wiz-serp" target="_blank">Alpha</a>
-                El 30 de marzo lanzó el tercer single del nuevo álbum, titulado <a href="https://www.youtube.com/watch?v=XUctUGKs1Sc" target="_blank">«Los Ángeles»</a>.El tema obtuvo varios logros en sus primeras semanas, 
-                tales como alcanzar el top 200 de <a href="https://www.google.com/search?client=opera-gx&q=Spotify&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">Spotify</a> global, obtener la cima en la lista de los números uno de <a href="https://www.google.com/search?q=LOS40+&client=opera-gx&hs=lCr&sca_esv=595707050&sxsrf=AM9HkKnGR8npZYtnQffuERIQCSaxijVjUw%3A1704391770808&ei=WvSWZaf1MKfqkdUPz6GbiAI&ved=0ahUKEwinirqQqsSDAxUndaQEHc_QBiEQ4dUDCBA&uact=5&oq=LOS40+&gs_lp=Egxnd3Mtd2l6LXNlcnAiBkxPUzQwIDIKECMYgAQYigUYJzIQEAAYgAQYigUYQxixAxiDATIFEAAYgAQyChAAGIAEGIoFGEMyFhAuGIAEGBQYhwIYsQMYgwEYxwEY0QMyBRAAGIAEMgsQLhiABBjHARjRAzIFEAAYgAQyBRAAGIAEMgUQABiABEiFAVAAWABwAHgBkAEAmAFcoAFcqgEBMbgBA8gBAPgBAeIDBBgAIEGIBgE&sclient=gws-wiz-serp" target="_blank">LOS40</a>, lograr el número 3 en la lista de ventas 
-                oficiales de España y el número 76 en las listas oficiales de Argentina, además de conseguir triple <a href="https://www.google.com/search?client=opera-gx&q=disco+de+Platino&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">disco de Platino</a> por vender más de 180 000 unidades 
-                en España.
-            </p> <br>
-
-            <p>Su ultima grana noticia fue que lleno el <a href="https://www.google.com/search?client=opera-gx&q=Santigo+Bernabeu+españa&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank">Santigo Bernabéu</a> para finales de 2024 en 2 horas con un total de 65.000 personas</p> <br><br>
+            <p>
+                Desde su salida del programa, <span class="Aitana">Aitana</span> comenzó a trabajar en su primer trabajo discográfico. 
+                Después del lanzamiento del vídeo lírico de <a href="https://www.youtube.com/watch?v=0WGJIp0Jzio" target="_blank">«Arde»</a> en YouTube, 
+                viajó a Los Ángeles para grabar su disco con el productor musical 
+                <a href="https://www.google.com/search?q=Sebastián+Krys" target="_blank">Sebastián Krys.</a> En mayo, actuó en Madrid, Málaga y Barcelona en los conciertos de 
+                <a href="https://www.google.com/search?q=LOS40+Primavera+Pop" target="_blank">LOS40 Primavera Pop.</a>
+            </p>
+            <img src="img/aitana_blanco.jpg" alt="Aitana Ocaña en concierto" class="img2">
+            <p>
+                Posteriormente, fue invitada por <a href="https://www.google.com/search?q=david+bisbal" target="_blank">David Bisbal</a> para participar como invitada en su concierto en el Palau Sant Jordi de Barcelona, 
+                donde interpretó junto a él <a href="https://www.youtube.com/watch?v=AS5DOyyoXJI" target="_blank">«Mi princesa»</a>. 
+                El 29 de junio, <span class="Aitana">Aitana</span> y el resto de sus compañeros comenzaron la gira de Operación Triunfo, 
+                y para entonces ya había firmado su primer contrato discográfico con 
+                <a href="https://www.google.com/search?q=Universal+Music+Spain" target="_blank">Universal Music Spain.</a> El 3 de agosto, actuó en solitario en el Coche Music Festival y 
+                más adelante en el <a href="https://www.google.com/search?q=CCME+On+The+Beach" target="_blank">CCME On The Beach.</a> El 30 de noviembre de 2018, publicó su primer álbum en solitario 
+                llamado <a href="https://www.google.com/search?q=Tráiler+aitana" target="_blank">Tráiler</a>.
+            </p>
         </section>
     </main>
 
-    <aside>
-        <img class="img1" src="img/aitana-bio.jpg" alt="Foto de Aitana Sorriendo" width="500" height="600">
-        <img class="img2" src="img/aitana_sentada.webp" alt="Foto de Aitana sentada en escenario" width="500" height="700">
-    </aside>
-    <img class="aitanablanco" src="img/aitana_blanco.jpg" alt="Foto de Aitana subida en un escenario" width="1200">
     <footer>
         <div class="copyright">
             <h3>Copyright</h3>
@@ -241,7 +231,7 @@
             <ul>
                 <li><a href="https://www.youtube.com/channel/UCtakZatUqY-XaihWfMnz07w" target="_blank"><img
                             src="img/youtube.png" alt="Enlace a Youtube" width="35" height="35"></a>
-                </li>
+                </li>   
                 <li><a href="https://www.instagram.com/aitanax/" target="_blank"><img
                             src="img/instagram.png" alt="Enlace a Instagram" width="35"
                             height="35"></a></li>
@@ -257,4 +247,5 @@
         </div>
     </footer>
 </body>
+
 </html>
