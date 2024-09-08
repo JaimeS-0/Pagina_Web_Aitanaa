@@ -13,24 +13,28 @@ yarn-error.log*
 *~
 
 # Sistema operativo
-Thumbs.db        # Windows
-*.lnk            # Windows
+Thumbs.db        # Windows
+*.lnk            # Windows
 
 # Configuraciones de editores de código
-.vscode/         # Visual Studio Code
-*.suo            # Visual Studio
-*.user           # Visual Studio
-*.userosscache   # Visual Studio
-*.sln.docstates  # Visual Studio
+.vscode/         # Visual Studio Code
+*.suo            # Visual Studio
+*.user            # Visual Studio
+*.userosscache   # Visual Studio
+*.sln.docstates  # Visual Studio
 
-# Dependencias de Node.js (si lo usas en algún momento)
+# Dependencias
 node_modules/
+bower_components/
+vendor/
 
 # Directorios de build y distribución
 dist/
 build/
+target/
+out/
 
-# Archivos de entorno (importante si usas variables de entorno)
+# Archivos de entorno
 .env
 .env.*
 
@@ -38,3 +42,24 @@ build/
 *.local
 secret.config
 config/
+
+# Caches
+cache/
+*.cache
+
+# Cobertura de código
+coverage/
+
+# Documentación generada
+docs/
+
+# Traducciones
+locales/
+
+# Bases de datos locales
+db.sqlite
+*.db
+
+# Herramientas de control de versiones adicionales
+.gitmodules
+.git/modules/
